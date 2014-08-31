@@ -48,8 +48,7 @@ public class ChatTest {
 
 		// Efetua o estímulo
 		chat.enviarArquivo(new File("temp.txt"));
-		reset(rede);
-
+		
 		// Verificar se os mocks foram acionados
 		verify(rede).enviar(any(Pacote.class));
 
